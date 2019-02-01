@@ -3,6 +3,13 @@
 .classpath
 .idea/
 .iml
+target/
+out/
+
+*/target
+*.iml
+*/.idea
+*/target
 
 # Compiled class file
 *.class
