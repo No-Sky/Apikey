@@ -13,7 +13,7 @@ import org.springframework.web.bind.annotation.RequestMethod;
 import org.springframework.web.bind.annotation.RequestParam;
 import org.springframework.web.bind.annotation.ResponseBody;
 
-import java.util.ArrayList;
+
 import java.util.HashMap;
 import java.util.List;
 import java.util.Map;
@@ -62,7 +62,7 @@ public class ApiController {
         CommonResult<Map<String, Object>> cr = new CommonResult<>();
 
         apiService.selectList().forEach(api -> {
-            if (api.getDeleted() == 1) {
+            if (api.getDeleted() == 0) {
                 resultObject.put("id", api.getId());
                 resultObject.put("name", api.getName());
                 resultObject.put("password", api.getPassword());
@@ -72,7 +72,7 @@ public class ApiController {
                 resultObject.put("status", api.getStatus());
             }
         });
-        if (resultObject.size() == 0) {
+        if (resultObject.size() != 0) {
             cr.setCode(CommonResult.SUCCESS_CODE);
             cr.setMsg("查询成功");
             cr.setEntiy(resultObject);

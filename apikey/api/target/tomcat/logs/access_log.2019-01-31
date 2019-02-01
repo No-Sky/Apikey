@@ -1,3 +1,0 @@
-0:0:0:0:0:0:0:1 - - [31/Jan/2019:19:37:01 +0800] "GET /apiFactory/all HTTP/1.1" 404 - http-bio-8181-exec-1 0
-0:0:0:0:0:0:0:1 - - [31/Jan/2019:19:37:20 +0800] "GET /api/all HTTP/1.1" 200 514 http-bio-8181-exec-3 4369
-0:0:0:0:0:0:0:1 - - [31/Jan/2019:19:37:22 +0800] "GET /favicon.ico HTTP/1.1" 404 - http-bio-8181-exec-5 0
