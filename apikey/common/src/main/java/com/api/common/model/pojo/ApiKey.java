@@ -1,5 +1,7 @@
 package com.api.common.model.pojo;
 
+import com.fasterxml.jackson.annotation.JsonFormat;
+
 import java.util.Date;
 
 /**
@@ -9,15 +11,26 @@ import java.util.Date;
  * @create: 2019-01-31 15:47
  **/
 public class ApiKey {
-    private String id;//
-    private String name;//
-    private String password;//
-    private String type;//
-    private String key;//
-    private Date createTime;//
-    private Date updateTime;//
-    private Integer status;//   apikey状态：1可用，2即将失效，0失效
-    private Integer deleted;//
+    /** **/
+    private String id;
+    /** **/
+    private String name;
+    /** **/
+    private String password;
+    /** **/
+    private String type;
+    /** **/
+    private String key;
+    /** **/
+    private Date createTime;
+    /** **/
+    private Date updateTime;
+    /**
+    *    apikey状态：1可用，2即将失效，0失效
+    **/
+    private Integer status = 1;
+    /** **/
+    private Integer deleted;
 
     public String getId() {
         return this.id;
