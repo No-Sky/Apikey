@@ -7,9 +7,11 @@ target/
 out/
 
 */target
-*.iml
+*/target/
 */.idea
-*/target
+*/.idea/
+*.iml
+
 
 # Compiled class file
 *.class
